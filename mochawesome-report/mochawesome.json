@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-07T11:42:46.813Z",
+    "end": "2024-05-07T11:43:08.928Z",
+    "duration": 22115,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b8d3f642-2b87-450c-b70f-f81e93bf0226",
+      "title": "",
+      "fullFile": "cypress/e2e/login/login.cy.js",
+      "file": "cypress/e2e/login/login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d2d688a2-362d-42ee-9aa1-2b7a8fd91881",
+          "title": "Teste Funcional de Login com sucesso",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve realizar o login com sucesso",
+              "fullTitle": "Teste Funcional de Login com sucesso Deve realizar o login com sucesso",
+              "timedOut": null,
+              "duration": 7497,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://webserver-pg-uat.lfr.cloud/\");\ncy.get('#onetrust-accept-btn-handler').click();\ncy.get('.signup-cta').click();\ncy.get('.text-underline').click();\ncy.get('#_com_pg_descubrapg_consumerlogin_portlet_ConsumerLoginPortlet_email').type(\"handrade-dpg11@vertigo.com.br\");\ncy.get('#_com_pg_descubrapg_consumerlogin_portlet_ConsumerLoginPortlet_password').type(\"H-s123456\");\ncy.get('.peg__register-form-submit').click();",
+              "err": {},
+              "uuid": "de9f0193-350c-49b2-9f53-6d0299ece097",
+              "parentUUID": "d2d688a2-362d-42ee-9aa1-2b7a8fd91881",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validando login com usuario incorreto",
+              "fullTitle": "Teste Funcional de Login com sucesso Validando login com usuario incorreto",
+              "timedOut": null,
+              "duration": 6494,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://webserver-pg-uat.lfr.cloud/\");\ncy.get('#onetrust-accept-btn-handler').click();\ncy.get('.signup-cta').click();\ncy.get('.text-underline').click();\ncy.get('#_com_pg_descubrapg_consumerlogin_portlet_ConsumerLoginPortlet_email').type(\"loginIncoreto@com.br\");\ncy.get('#_com_pg_descubrapg_consumerlogin_portlet_ConsumerLoginPortlet_password').type(\"H-s123456\");\ncy.get('.peg__register-form-submit').click();\ncy.get('body').should('contain', 'Erro:').should('be.visible');",
+              "err": {},
+              "uuid": "148b945a-6a95-4771-89f5-145da957f2a3",
+              "parentUUID": "d2d688a2-362d-42ee-9aa1-2b7a8fd91881",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validando com senha incorreta",
+              "fullTitle": "Teste Funcional de Login com sucesso Validando com senha incorreta",
+              "timedOut": null,
+              "duration": 5811,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://webserver-pg-uat.lfr.cloud/\");\ncy.get('#onetrust-accept-btn-handler').click();\ncy.get('.signup-cta').click();\ncy.get('.text-underline').click();\ncy.get('#_com_pg_descubrapg_consumerlogin_portlet_ConsumerLoginPortlet_email').type(\"handrade-dpg11@vertigo.com.br\");\ncy.get('#_com_pg_descubrapg_consumerlogin_portlet_ConsumerLoginPortlet_password').type(\"senhaIncorreta\");\ncy.get('.peg__register-form-submit').click();\ncy.get('body').should('contain', 'Erro:').should('be.visible');",
+              "err": {},
+              "uuid": "5d83ed14-3c2b-4e7e-b0e9-1f7d052e82d4",
+              "parentUUID": "d2d688a2-362d-42ee-9aa1-2b7a8fd91881",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "de9f0193-350c-49b2-9f53-6d0299ece097",
+            "148b945a-6a95-4771-89f5-145da957f2a3",
+            "5d83ed14-3c2b-4e7e-b0e9-1f7d052e82d4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19802,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
