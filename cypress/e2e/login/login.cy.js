@@ -7,7 +7,7 @@ describe('Teste Funcional de Login com sucesso', () => {
         cy.get('.signup-cta').click()
         cy.get('.text-underline').click()
         cy.get('#_com_pg_descubrapg_consumerlogin_portlet_ConsumerLoginPortlet_email').type("handrade-dpg11@vertigo.com.br")
-        cy.get('#_com_pg_descubrapg_consumerlogin_portlet_ConsumerLoginPortlet_password').type("H-s123456")
+        cy.get('#_com_pg_descubrapg_consumerlogin_portlet_ConsumerLoginPortlet_password').type("H-s123456") //H-s123456 senha correta
         cy.get('.peg__register-form-submit').click()
     });
 
